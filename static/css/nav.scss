@@ -1,0 +1,38 @@
+@import "index.scss";
+
+nav {
+  text-align: center;
+  background: $gr-color;
+  background: linear-gradient(
+    90deg,
+    $gr-color 0%,
+    $gr-color-2 49%,
+    $gr-color 100%
+  );
+  border-bottom-right-radius: $bd-radius-god;
+  border-bottom-left-radius: $bd-radius-god;
+  font-family: $serrat-font;
+  font-size: $small-font-size;
+
+  ul {
+    padding: $nav-padding;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      display: flex;
+      padding: $nav-padding-2;
+
+      .nav-icon {
+          font-size: $nav-icon-size;
+      }
+
+      a {
+        color: $white-color;
+        text-decoration: none;
+        font-size: $tiny-font-size;
+      }
+    }
+  }
+}

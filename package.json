@@ -1,16 +1,25 @@
 {
-  "name": "werickcodeschallenges",
+  "name": "pito",
   "description": "A plartform for developers to be able to pick on challenges",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "nodemon --exec next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "@fortawesome/free-regular-svg-icons": "^5.9.0",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "js-cookie": "^2.2.0",
     "next": "9.0.2",
+    "next-images": "^1.1.2",
+    "node-sass": "^4.12.0",
     "react": "16.8.6",
-    "react-dom": "16.8.6"
+    "react-dom": "16.8.6",
+    "sass-loader": "^7.1.0"
   }
 }

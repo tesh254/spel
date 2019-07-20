@@ -1,56 +1,39 @@
-import React from 'react'
-import Link from 'next/link'
-
-const links = [
-  { href: 'https://zeit.co/now', label: 'ZEIT' },
-  { href: 'https://github.com/zeit/next.js', label: 'GitHub' }
-].map(link => {
-  link.key = `nav-link-${link.href}-${link.label}`
-  return link
-})
+import React from "react";
+import Link from "next/link";
+import styles from "../static/css/nav.scss";
+import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
+import { faBell } from "@fortawesome/free-solid-svg-icons";
 
 const Nav = () => (
   <nav>
     <ul>
       <li>
-        <Link href='/'>
-          <a>Home</a>
+        <Link href="/">
+          <a className="nav-icon">
+            <Icon icon={faBell} />
+          </a>
         </Link>
       </li>
-      {links.map(({ key, href, label }) => (
-        <li key={key}>
-          <a href={href}>{label}</a>
-        </li>
-      ))}
+      <li>
+        <Link href="/">
+          <a>
+            <img
+              src="/static/img/logo.svg"
+              alt="mascot-logo"
+              className="logo"
+              style={{ width: 55 + "px" }}
+            />
+          </a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/auth">
+          <a>Login/Signup</a>
+        </Link>
+      </li>
     </ul>
-
-    <style jsx>{`
-      :global(body) {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-          Helvetica, sans-serif;
-      }
-      nav {
-        text-align: center;
-      }
-      ul {
-        display: flex;
-        justify-content: space-between;
-      }
-      nav > ul {
-        padding: 4px 16px;
-      }
-      li {
-        display: flex;
-        padding: 6px 8px;
-      }
-      a {
-        color: #067df7;
-        text-decoration: none;
-        font-size: 13px;
-      }
-    `}</style>
+    <style jsx>{styles}</style>
   </nav>
-)
+);
 
-export default Nav
+export default Nav;
