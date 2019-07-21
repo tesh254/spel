@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+
+$bg-color: #041720;
+$card-color: #00414d;
+$gr-color: #00716c;
+$gr-color-2: #36a277;
+$gr-color-3: #90d173;
+$yl-color: #90d173;
+$white-color: #fff;
+$small-font-size: 14pt;
+$tiny-font-size: 12pt;
+$medium-font-size: 16pt;
+$large-font-size: 18pt;
+$huge-font-size: 20pt;
+$god-font-size: 22pt;
+$nav-padding: 10px 35px 4px 35px;
+$nav-padding-2: 1px 2px 5px 15px;
+$crimson-font: "Crimson Text", serif;
+$serrat-font: "Montserrat", sans-serif;
+$quicksand-font: "Quicksand", sans-serif;
+$light-weight: 100;
+$bold-weight: 800;
+$medium: 400;
+$bd-radius-tiny: 5px;
+$bd-radius-small: 15px;
+$bd-radius-medium: 25px;
+$bd-radius-large: 35px;
+$bd-radius-huge: 45px;
+$bd-radius-god: 55px;
+$nav-icon-size: 25px;
+
+* {
+  font-family: $quicksand-font;
+}
+
+html {
+  background: $bg-color !important;
+}
