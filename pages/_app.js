@@ -1,5 +1,6 @@
 import React from "react";
 import App, { Container } from "next/app";
+import Nav from "../components/nav";
 import styles from "../static/css/index.scss";
 
 class Spel extends App {
@@ -19,6 +20,7 @@ class Spel extends App {
     return (
       <Container>
         <div className="index" data-theme="dark">
+          <Nav />
           <Component {...pageProps} />
         </div>
       </Container>

@@ -1,23 +1,21 @@
 import React from "react";
 import Link from "next/link";
 import Head from "next/head";
-import styles from "../static/css/home.scss";
-import withAuth from "../helpers/withAuth.js";
+import { auth, firebase } from "../firebase";
+import styles from "../static/css/auth.scss";
+import AuthContainer from "../components/containers/auth";
+import withAuth from "../helpers/withAuth";
 
 class Home extends React.Component {
-  static async getInitialProps(ctx) {
-    const { isServer, token } = ctx;
-    return { isServer, token }
-  }
   render() {
-    console.log(this.props)
     return (
-      <div> 
+      <div>
         <Head>
           <title>Home</title>
         </Head>
-
-        <div className="home-content">Hello world</div>
+        <div className="auth-holder">
+          <AuthContainer />
+        </div>
         <style jsx>{styles}</style>
       </div>
     );

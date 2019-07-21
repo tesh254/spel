@@ -33,7 +33,7 @@ export default class CustomDocument extends Document {
         </Head>
         <body
           className="index"
-          style={{background: "#041720", margin: "0", padding: 0}}
+          style={{ background: "#041720", margin: "0", padding: 0 }}
         >
           <Main />
           <NextScript />
