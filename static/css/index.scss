@@ -8,7 +8,21 @@ $gr-color: #00716c;
 $gr-color-2: #36a277;
 $gr-color-3: #90d173;
 $yl-color: #90d173;
+$yl-color-2: #F9F871;
 $white-color: #fff;
+$dark-grey: #737373;
+$lighter-grey: #e5e5e5;
+$gradient: linear-gradient(
+  90deg,
+  $gr-color 0%,
+  $gr-color-2 49%,
+  $gr-color 100%
+);
+$gradient-2: linear-gradient(
+  90deg,
+  $gr-color 0%,
+  $gr-color-2 49%,
+);
 $small-font-size: 14pt;
 $tiny-font-size: 12pt;
 $medium-font-size: 16pt;
@@ -30,9 +44,21 @@ $bd-radius-large: 35px;
 $bd-radius-huge: 45px;
 $bd-radius-god: 55px;
 $nav-icon-size: 25px;
+$auth-button-box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.05);
+$auth-button-box-shadow-2: 1px 4px 5px 1px rgba(0, 0, 0, 0.1);
+$box-shadow-3: 0px 0px 2px 0px $yl-color-2;
+$long-duration: 150ms;
+$short-duration: 10ms;
+$auth-icon-width: 18px;
+$auth-icon-height: 18px;
 
 * {
   font-family: $quicksand-font;
+  color: $white-color;
+}
+
+.move-down {
+  margin-top: 10px;
 }
 
 html {

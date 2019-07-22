@@ -1,0 +1,55 @@
+@import "index.scss";
+
+.auth-holder {
+  margin: 10% 5% 0 31%;
+  padding: 2%;
+  width: 30%;
+  background: $gr-color;
+  background: $gradient;
+  text-align: center;
+}
+
+div.auth-content {
+  padding: 2%;
+
+  .row {
+    .google-button_holder {
+      height: 40px;
+      border-width: 0;
+      background: $white-color;
+      color: $dark-grey;
+      border-radius: 5px;
+      white-space: nowrap;
+      box-shadow: $auth-button-box-shadow;
+      transition-property: background-color, box-shadow;
+      transition-duration: $long-duration;
+      transition-timing-function: ease-in-out;
+      padding: 0;
+
+      &:focus,
+      &:hover {
+        box-shadow: $auth-button-box-shadow-2;
+        cursor: pointer;
+      }
+
+      &:active {
+        background-color: $lighter-grey;
+        box-shadow: none;
+        transition-duration: $short-duration;
+      }
+
+      .google-button_text {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 24px;
+        font-size: $tiny-font-size;
+        font-weight: bold;
+        color: $dark-grey;
+      }
+    }
+
+    .statement {
+        font-size: 9pt;
+    }
+  }
+}
